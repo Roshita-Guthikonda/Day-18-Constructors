@@ -1,0 +1,86 @@
+Day-18 Garbage Collector
+=========================
+Garbage Collection:
+-------------------
+Ways to make an object eligible for GC:
+----------------------------------------
+1. Nullifying the reference variable.
+2. Reassign the reference variable.
+3. Objects are created inside method.
+4. Island isolation.
+
+
+finalize():
+============
+finalize() method is a special method provided by the Object class in java, Which can overridden to perform clean up operations before an object is garbage collected.
+
+Constructors:
+=============
+->Object creation is not enough, compulsory we should perform initialization, then only an object is in position to provide response properly.
+
+->Whenever we create an object some piece of code will be executed automatically to perform initialization of an object this piece of code is nothing but constructor.
+
+->Hence the main objective of constructor is to perform initialization of an object.
+
+
+Rules to write Constructors
+============================
+1.Name of the constructor and name of the class must be same.
+2.Return type concept is not applicable for constructor even void is also not required. If we take by mistakenly the return type for the constructor we don't get any compiletime and runtime error because the compiler simply treats it as a method.
+3.The only applicable modifiers to declare constructors are public, private, protected and default.
+
+Types of Constructors
+======================
+There are 3 types of constructors.
+
+default constructor
+---------------------
+->for every class in java including abstract classes also constructor concept is applicable
+
+->If we are not writing at least one constructor then compiler will generate default constructor.
+
+->If we are writing at least one constructor the compiler won't generate any default constructor. Hence every class contains either compiler generated constructor or programmer written constructor but not both simultaneously.
+
+Syntax:
+=======
+public className(){
+
+}
+
+Parameterized constructor
+---------------------------
+->A parameterized constructor in java is a constructor that allows you to initialize the objects of a class with specific values at a time of object creation.
+
+->Unlike the default constructor, which takes no arguments, a parameterized constructor accept one or more parameters.
+
+Syntax:
+========
+public className(parameter_list){
+
+}
+
+Copy constructor
+-----------------
+->A copy constructor in java is a special type of constructor that initializes a new object as a copy of an Existing object of the same class.
+
+->It accepts an object of the same class as parameter and initializes the new object state with values from existing object.
+
+Syntax:
+========
+modifier className(classObject){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
